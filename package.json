@@ -1,7 +1,6 @@
 {
   "name": "product-api",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -17,5 +16,14 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alihasna32/ejp-next-js-project-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alihasna32/ejp-next-js-project-server/issues"
+  },
+  "homepage": "https://github.com/alihasna32/ejp-next-js-project-server#readme",
+  "description": ""
 }

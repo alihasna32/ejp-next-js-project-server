@@ -152,5 +152,6 @@ app.delete("/products/:id", (req, res) => {
   res.status(204).send();
 });
 
-const serverless = require("serverless-http"); 
-module.exports.handler = serverless(app);
+module.exports = (req, res) => {
+  app(req, res);
+};
