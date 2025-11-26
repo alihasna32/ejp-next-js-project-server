@@ -153,6 +153,5 @@ app.delete("/products/:id", (req, res) => {
 });
 
 // At the very end of index.js
-module.exports = (req, res) => {
-  app(req, res);
-};
+const serverless = require("serverless-http");
+module.exports.handler = serverless(app);
