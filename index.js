@@ -5,13 +5,19 @@ const cors = require("cors");
 const app = express();
 
 const PORT = process.env.PORT || 4000;
-const FRONTEND_URL = process.env.FRONTEND_URL || "http://localhost:3000" || "https://ejp-next-js-project.netlify.app" ;
+const FRONTEND_URL =
+  process.env.FRONTEND_URL || "http://localhost:3000";
 
 app.use(
   cors({
-    origin: [FRONTEND_URL, 'https://ejp-next-js-project.netlify.app']
+    origin: [
+      FRONTEND_URL,
+      "http://localhost:3000",
+      "https://ejp-next-js-project.netlify.app"
+    ],
   })
 );
+
 app.use(express.json());
 
 let products = [
