@@ -5,16 +5,10 @@ const cors = require("cors");
 const app = express();
 
 const PORT = process.env.PORT || 4000;
-const FRONTEND_URL =
-  process.env.FRONTEND_URL || "http://localhost:3000";
 
 app.use(
   cors({
-    origin: [
-      FRONTEND_URL,
-      "http://localhost:3000",
-      "https://ejp-next-js-project-1stulqm7k-ali-hasans-projects-9d2f8142.vercel.app/"
-    ],
+  origin: "*",
   })
 );
 
