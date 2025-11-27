@@ -13,7 +13,7 @@ app.use(
     origin: [
       FRONTEND_URL,
       "http://localhost:3000",
-      "https://ejp-next-js-project.netlify.app"
+      "https://ejp-next-js-project-1stulqm7k-ali-hasans-projects-9d2f8142.vercel.app/"
     ],
   })
 );
