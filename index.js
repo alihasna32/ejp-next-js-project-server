@@ -158,6 +158,11 @@ app.delete("/products/:id", (req, res) => {
   res.status(204).send();
 });
 
+app.listen(PORT, () => {
+  console.log(`Example app listening on port ${PORT}`);
+});
+
+
 module.exports = (req, res) => {
   app(req, res);
 };
